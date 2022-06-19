@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    /> -->
+    <title>ARC</title>
+    <!----Custom CSS Filw Link--->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="CSS/normalies.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="CSS/allmin.css">
+    <!-- <link rel="stylesheet" href="CSS/master.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body >
+
+  <div class="hero">
+    <div class="mt-4" id="div_language" style="display: none;" >
+      <h2 class="mb-3 text-light">Select Language</h2>
+      <select class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
+      <select class="form-select bg-secondary text-light mt-2" id="select_dialect"></select>
+    </div>
+    <form action="NameGenderRequest" method="GET" id="NameGenderRequest">
+        <img src="images/ARC.png" class="arc" alt="">
+        <p class="arcText">ARC</p>
+        <br>
+        <div id="searchBox">
+       
+          <!-- <img src="image/google.png" id="googleIcon"> -->
+          <!-- <i class="fa-solid fa-magnifying-glass" id="googleIcon"></i> -->
+          <img src="images/searchengin-brands.svg" alt="" id="googleIcon">
+          <input type="text" placeholder="Search ARC or type a URL" id="final" name="Name" class="searchBox" required>
+          <!-- <img src="image/microphn.png" class="mic-icon"> -->
+          <!-- <img src="images/microphone-lines-solid.svg" alt="" class="mic-icon"> -->
+          <button class="btn btn-success micB" type="button" id="start" ><img src="images/microphone-lines-solid.svg" alt="" class="mic-icon"></button>
+          <!-- <i class="fa-solid fa-microphone"></i> -->
+        </div>
+        <br>
+        <!-- <button class="stopB" id="stop">Stop</button> -->
+
+        <input type="submit" value="Search" class="stopB" id="stop">
+  </form>
+    <div class="mt-4" style="display: none;">
+      <button class="btn btn-success" id="start"><img src="images/microphone-lines-solid.svg" alt="" class="mic-icon"></button>
+      <button class="btn btn-danger" id="stop">Stop</button>
+      <p id="status" class="lead mt-3 text-light" style="display: none" style="background-image: url(images/pexels-faik-akmd-1025469.jpg);">Listenting ...</p>
+    </div>
+  </div>
+  
+
+  <script src="./js.js"></script>
+  <script src="./language.js"></script>
+  <script src="./speech.js"></script>
+</body>
+</html>

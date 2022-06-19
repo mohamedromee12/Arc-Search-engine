@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>Matrix</title>
+</head>
+<body>
+    <div class="main">
+        <form action="MatrixRequest" method="GET" id="MatrixRequest">
+            <h1>Matrix Operations</h1>
+        <textarea  id="matrix" cols="50" rows="10" name="matrix"></textarea>
+        <br>
+        <div class="checks">
+        
+            Transpose: <input type="checkbox" name="Transpose"/> 
+            Determinant: <input type="checkbox" name="Determinant"/> 
+        </div>
+        <br>
+        <input type="submit" value="Calculate"/>
+        </form>
+    </div>
+</body>
+<style>
+    .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+</html>
